@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'airportlounge',
     'multiselectfield',
     'merged_inlines',
+    'Bus_Booking_main',
 ]
 
 MIDDLEWARE = [
@@ -99,6 +100,7 @@ WSGI_APPLICATION = 'con_services.wsgi.application'
        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
    # }
 #}
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -111,7 +113,7 @@ DATABASES = {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
              # Tell MySQLdb to connect with 'utf8mb4' character set
             'charset': 'utf8mb4',
-        },
+       },
 
      # Tell Django to build the test database with the 'utf8mb4' character set
         'TEST': {
@@ -121,7 +123,28 @@ DATABASES = {
 
     }
 }
-
+#DATABASES = {
+ #   'default': {
+  #      'ENGINE': 'django.db.backends.mysql',
+   #     'USER': 'eauser',
+    #    'PASSWORD': 'eauser@2020',
+     #   'NAME': 'eaconcierge',
+      #  'HOST': '172.14.5.142',
+       # 'PORT': '3306',
+        #'OPTIONS': {
+         #   'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+             # Tell MySQLdb to connect with 'utf8mb4' character set
+          #  'charset': 'utf8mb4',
+        #},
+ 
+     # Tell Django to build the test database with the 'utf8mb4' character set
+        #'TEST': {
+         #   'CHARSET': 'utf8mb4',
+          #  'COLLATION': 'utf8mb4_unicode_ci',
+        #}
+ 
+    #}
+#}
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
